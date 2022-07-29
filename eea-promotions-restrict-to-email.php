@@ -1,13 +1,13 @@
 <?php
 /*
-  Plugin Name: Event Espresso - Promotions Restrict to Email (EE 4.9.10+)
-  Description: Allows the Event Espresso Promotions to be limited to specific e-mail addresses.
+  Plugin Name: Event Espresso - Promotions Restrict to Email
+  Description: Allows the Event Espresso Promotions Addon to be limited to specific e-mail addresses.
   Version: 1.0
   Author: Marries van de Hoef
   Author URI:
   License: GPL2
   Requires at least: 4.6
-  TextDomain: ee-promotion-restrict-to-email
+  TextDomain: event-espresso-promotions-restrict-to-email
 
 
   This program is free software; you can redistribute it and/or modify
@@ -98,7 +98,7 @@ function espresso_promotions_restrict_to_email_activation_error()
   <div class="error">
     <p><?php
         //phpcs:disable Generic.Files.LineLength.TooLong
-        printf(esc_html__('Event Espresso Promotions Restrict to Email could not be activated. Please ensure that Event Espresso version %1$s or higher is running', 'ee-promotion-restrict-to-email'), EE_PROMOTIONS_RESTRICT_TO_EMAIL_CORE_VERSION_REQUIRED);
+        printf(esc_html__('Event Espresso Promotions Restrict to Email could not be activated. Please ensure that Event Espresso version %1$s or higher is running', 'event-espresso-promotions-restrict-to-email'), EE_PROMOTIONS_RESTRICT_TO_EMAIL_CORE_VERSION_REQUIRED);
         //phpcs:enable
     ?></p>
   </div>

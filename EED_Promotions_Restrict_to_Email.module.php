@@ -131,7 +131,7 @@ class EED_Promotions_Restrict_to_Email extends EED_Module
     {
         add_meta_box(
             'promotion-restrict-to-email-mbox',
-            esc_html__('Restrict promotion to email', 'ee-promotion-restrict-to-email'),
+            esc_html__('Restrict promotion to email', 'event-espresso-promotions-restrict-to-email'),
             array('EED_Promotions_Restrict_to_Email', 'restrict_to_email_metabox_content'),
             self::$_admin_page->wp_page_slug(),
             'normal',
@@ -190,7 +190,7 @@ class EED_Promotions_Restrict_to_Email extends EED_Module
             } catch (EE_Validation_Error $e) {
                 EE_Error::add_error(
                     sprintf(
-                        esc_html__('Invalid email address: %1$s', 'ee-promotion-restrict-to-email'),
+                        esc_html__('Invalid email address: %1$s', 'event-espresso-promotions-restrict-to-email'),
                         esc_html($email)
                     ),
                     '', // empty to allow for multiple errors to be printed

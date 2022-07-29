@@ -73,7 +73,7 @@ class EE_Promotions_Restrict_to_Email extends EE_Addon
             //phpcs:disable Generic.Files.LineLength.TooLong
             new PersistentAdminNotice(
                 'auto-deactivated-promotions-restrict-to-email',
-                esc_html__('The "Event Espresso - Promotions Restrict to Email" plugin has been deactivated automatically because the required "Event Espresso - Promotions" was not activated.', 'ee-promotion-restrict-to-email'),
+                esc_html__('The "Event Espresso - Promotions Restrict to Email" plugin has been deactivated automatically because the required "Event Espresso - Promotions" was not activated.', 'event-espresso-promotions-restrict-to-email'),
                 true
             );
             //phpcs:enable
