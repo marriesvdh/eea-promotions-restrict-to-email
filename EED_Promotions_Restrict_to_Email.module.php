@@ -243,11 +243,11 @@ class EED_Promotions_Restrict_to_Email extends EED_Module
         // Fetch the attendee's email addresses
         $attendees_email = array();
         foreach ($attendees as $attendee) {
-            $attendees_email[] = $attendee->email();
+            $attendees_email[] = strtolower($attendee->email());
         }
 
         // Find any matches between the attendee email addresses and the allowed email addresses
-        $matches = array_intersect(explode(',', $allowed_email_addresses), $attendees_email);
+        $matches = array_intersect(explode(',', strtolower($allowed_email_addresses)), $attendees_email);
 
         if (!empty($matches)) {
             return $applicable_items; // The promotion is allowed!
