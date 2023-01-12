@@ -2,7 +2,7 @@
 /*
   Plugin Name: Promotions Restrict to Email for Event Espresso
   Description: Allows the Event Espresso Promotions Addon to be limited to specific e-mail addresses.
-  Version: 1.0
+  Version: 1.0.1
   Author: Marries van de Hoef
   Author URI:
   License: GPL2
@@ -30,7 +30,7 @@
  */
 // define versions and this file
 define('EE_PROMOTIONS_RESTRICT_TO_EMAIL_CORE_VERSION_REQUIRED', '4.8.0.rc.0000');
-define('EE_PROMOTIONS_RESTRICT_TO_EMAIL_VERSION', '1.0.0');
+define('EE_PROMOTIONS_RESTRICT_TO_EMAIL_VERSION', '1.0.1');
 define('EE_PROMOTIONS_RESTRICT_TO_EMAIL_PLUGIN_FILE', __FILE__);
 
 
