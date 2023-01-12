@@ -238,7 +238,16 @@ class EED_Promotions_Restrict_to_Email extends EED_Module
         // Retrieve attendees of the current transaction
         $transaction_id = $applicable_items[0]->TXN_ID();
         $EEM_Attendee = EE_Registry::instance()->load_model('Attendee');
-        $attendees = $EEM_Attendee->get_attendees_for_transaction($transaction_id);
+
+        // Get primary attendee
+        $attendees = $EEM_Attendee->get_all(
+            array(
+                array(
+                    'Registration.Transaction.TXN_ID' => $transaction_id,
+                    'Registration.REG_count' => 1 // TODO: make this limitation on primary registrants an option
+                ),
+            )
+        );
 
         // Fetch the attendee's email addresses
         $attendees_email = array();
